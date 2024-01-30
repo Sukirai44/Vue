@@ -1,1 +1,27 @@
-hola
+#### Resumen de la Explicación de Vue.js en el Código HTML:
+
+1. **Productos:**
+   - productos: Un array de objetos que representan los productos disponibles.
+   - Cada objeto tiene propiedades como nombre, precio, cantidad y stock.
+
+2. **Carrito:**
+   - carrito: Un array que almacena los productos seleccionados por el usuario.
+
+3. **Vue.js:**
+   - Utiliza Vue.js para la lógica y manipulación de datos en la interfaz.
+   - Se importa Vue y se crea una instancia de la aplicación.
+
+4. **Interfaz:**
+   - Usa la directiva v-for para repetir tarjetas de productos en la interfaz.
+   - Muestra información como nombre, precio y un campo para la cantidad.
+
+5. **Agregar al Carrito:**
+   - agregarAlCarrito: Método que se llama al hacer clic en el botón "Agregar".
+   - Verifica si la cantidad seleccionada no supera el stock disponible.
+   - Agrega una copia del producto al array carrito.
+
+6. **Tabla de Carrito:**
+   - Muestra una tabla con los productos seleccionados, cantidad, precio unitario y total.
+
+7. **Vue Mount:**
+   - }).mount('#app');: Monta la aplicación Vue en el elemento con el ID 'app'.
