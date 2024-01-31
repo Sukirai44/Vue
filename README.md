@@ -13,9 +13,7 @@
     }
 }
 
-### V-for
-Interfaz:
-Usa la directiva v-for para repetir tarjetas de productos en la interfaz.
+
 #### 1. **Visualización de Productos:**
    - Utiliza Vue.js para dinámicamente mostrar una tarjeta para cada producto disponible.
    - Cada tarjeta muestra el nombre del producto, precio por unidad y un campo para ingresar la cantidad deseada.
@@ -28,7 +26,9 @@ Usa la directiva v-for para repetir tarjetas de productos en la interfaz.
 #### 3. **Visualización del Carrito:**
    - Muestra una tabla que presenta el contenido del carrito de compras.
    - La tabla incluye información como el nombre del producto, cantidad, precio unitario y el total por producto.
-
+### V-for
+Interfaz:
+Usa la directiva v-for para repetir tarjetas de productos en la interfaz.
 ####  Codigo usado
 
 - Vue.js: Para la manipulación de datos y la creación de componentes interactivos.
@@ -49,6 +49,8 @@ Creamos la App
             carrito: [],
         };
     },
+>
+Aqui asignamos que vea si el limite del carro sobrepaso la cantidad de stock
     methods: {
         // Método para agregar un producto al carrito
         agregarAlCarrito(producto) {
