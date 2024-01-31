@@ -35,6 +35,7 @@ Usa la directiva v-for para repetir tarjetas de productos en la interfaz.
 - Bootstrap: Para estilos y diseño responsivo.
 
 ### Vue
+Creamos la App
 > Vue.createApp({
     data() {
         return {
