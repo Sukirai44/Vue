@@ -49,5 +49,5 @@ Creamos la App
     },
 >
 Aqui asignamos que vea si el limite del carro sobrepaso la cantidad de stock mande un mensaje de que no hay producto, metod manda el mensaje a la tabla copiandolo, no directamente
-> methods: { // Método para agregar un producto al carrito agregarAlCarrito(producto) { // Verificamos si hay suficiente stock antes de agregar al carrito if (producto.cantidad <= producto.stock) { // Clonamos el objeto para evitar referencia directa this.carrito.push({ ...producto }); } else { alert("No hay suficiente stock disponible."); } } }, }).mount('#app');
+> methods: { // Método para agregar un producto al carrito agregarAlCarrito(producto) {  agregar al carrito if (producto.cantidad <= producto.stock) {  this.carrito.push({ ...producto }); } else { alert("No hay suficiente stock disponible."); } } }, }).mount('#app');
 
