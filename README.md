@@ -3,15 +3,19 @@
 ### V-for
 Interfaz:
 Usa la directiva v-for para repetir tarjetas de productos en la interfaz.
-> methods: {
-    agregarAlCarrito(producto) {
-        if (producto.cantidad <= producto.stock) {
-            this.carrito.push({...producto}); // Clonamos el objeto para evitar referencia directa
-        } else {
-            alert("No hay suficientes productos en stock");
-        }
-    }
-}
+
+> <div id="app" class="container mt-5">
+    <div class="row">
+        <div v-for="(producto, index) in productos" class="col-md-6 mb-4">
+            <div class="card">
+                <button type="button" @click="agregarAlCarrito(producto)" class="btn btn-primary position-relative">
+                    Agregar: {{ producto.nombre }}
+                </button>
+            </div>
+             <br v-if="(index + 1) % 2 === 0">
+        </div>
+    </div>  
+</div>
 
 
 #### 1. **Visualización de Productos:**
