@@ -1,8 +1,8 @@
 #### Explicación de Vue.js en el Código HTML:
-
-
-
 ###   Características
+### V-for
+Interfaz:
+Usa la directiva v-for para repetir tarjetas de productos en la interfaz.
 > methods: {
     agregarAlCarrito(producto) {
         if (producto.cantidad <= producto.stock) {
@@ -26,9 +26,7 @@
 #### 3. **Visualización del Carrito:**
    - Muestra una tabla que presenta el contenido del carrito de compras.
    - La tabla incluye información como el nombre del producto, cantidad, precio unitario y el total por producto.
-### V-for
-Interfaz:
-Usa la directiva v-for para repetir tarjetas de productos en la interfaz.
+
 ####  Codigo usado
 
 - Vue.js: Para la manipulación de datos y la creación de componentes interactivos.
@@ -50,18 +48,6 @@ Creamos la App
         };
     },
 >
-Aqui asignamos que vea si el limite del carro sobrepaso la cantidad de stock
-    methods: {
-        // Método para agregar un producto al carrito
-        agregarAlCarrito(producto) {
-            // Verificamos si hay suficiente stock antes de agregar al carrito
-            if (producto.cantidad <= producto.stock) {
-                // Clonamos el objeto para evitar referencia directa
-                this.carrito.push({ ...producto });
-            } else {
-                alert("No hay suficiente stock disponible.");
-            }
-        }
-    },
-}).mount('#app');
+Aqui asignamos que vea si el limite del carro sobrepaso la cantidad de stock mande un mensaje de que no hay producto, metod manda el mensaje a la tabla copiandolo, no directamente
+> methods: { // Método para agregar un producto al carrito agregarAlCarrito(producto) { // Verificamos si hay suficiente stock antes de agregar al carrito if (producto.cantidad <= producto.stock) { // Clonamos el objeto para evitar referencia directa this.carrito.push({ ...producto }); } else { alert("No hay suficiente stock disponible."); } } }, }).mount('#app');
 
